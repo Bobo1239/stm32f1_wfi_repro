@@ -1,0 +1,361 @@
+(HOST) DEBUG vector table: VectorTable { initial_stack_pointer: 20005000, hard_fault: 8000195 }
+└─ probe_run::elf @ src/elf.rs:31
+(HOST) DEBUG Searching registry for chip with name STM32F103C8
+└─ probe_rs::config::registry @ /home/bobo1239/Development/Rust/probe-rs/probe-rs/src/config/registry.rs:163
+(HOST) DEBUG Exact match for chip name: STM32F103C8
+└─ probe_rs::config::registry @ /home/bobo1239/Development/Rust/probe-rs/probe-rs/src/config/registry.rs:174
+(HOST) WARN  Using custom sequence for STM32F1/2/4/7
+└─ probe_rs::config::target @ /home/bobo1239/Development/Rust/probe-rs/probe-rs/src/config/target.rs:127
+(HOST) DEBUG RAM region: 0x20000000-0x20004FFF
+└─ probe_run::target_info @ src/target_info.rs:115
+(HOST) DEBUG valid SP range: 0x20000000..=0x20004FFC
+└─ probe_run::target_info @ src/target_info.rs:167
+(HOST) DEBUG Searching for CMSIS-DAP probes using libusb
+└─ probe_rs::probe::cmsisdap::tools @ /home/bobo1239/Development/Rust/probe-rs/probe-rs/src/probe/cmsisdap/tools.rs:17
+(HOST) DEBUG Found 0 CMSIS-DAP probes using libusb, searching HID
+└─ probe_rs::probe::cmsisdap::tools @ /home/bobo1239/Development/Rust/probe-rs/probe-rs/src/probe/cmsisdap/tools.rs:26
+(HOST) DEBUG Found 0 CMSIS-DAP probes total
+└─ probe_rs::probe::cmsisdap::tools @ /home/bobo1239/Development/Rust/probe-rs/probe-rs/src/probe/cmsisdap/tools.rs:47
+(HOST) DEBUG libusb 1.0.26.11724
+└─ jaylink @ /home/bobo1239/.cargo/registry/src/github.com-1ecc6299db9ec823/jaylink-0.3.0/src/lib.rs:1557
+(HOST) DEBUG libusb has capability API: true
+└─ jaylink @ /home/bobo1239/.cargo/registry/src/github.com-1ecc6299db9ec823/jaylink-0.3.0/src/lib.rs:1566
+(HOST) DEBUG libusb has HID access: true
+└─ jaylink @ /home/bobo1239/.cargo/registry/src/github.com-1ecc6299db9ec823/jaylink-0.3.0/src/lib.rs:1567
+(HOST) DEBUG libusb has hotplug support: true
+└─ jaylink @ /home/bobo1239/.cargo/registry/src/github.com-1ecc6299db9ec823/jaylink-0.3.0/src/lib.rs:1568
+(HOST) DEBUG libusb can detach kernel driver: true
+└─ jaylink @ /home/bobo1239/.cargo/registry/src/github.com-1ecc6299db9ec823/jaylink-0.3.0/src/lib.rs:1569
+(HOST) DEBUG found 1 probes
+└─ probe_run::probe @ src/probe.rs:25
+(HOST) TRACE Attempting to open device matching 0483:3748:4A40040132123853354B4E00
+└─ probe_rs::probe::cmsisdap::tools @ /home/bobo1239/Development/Rust/probe-rs/probe-rs/src/probe/cmsisdap/tools.rs:258
+(HOST) TRACE Trying device Bus 006 Device 001: ID 1d6b:0003
+└─ probe_rs::probe::cmsisdap::tools @ /home/bobo1239/Development/Rust/probe-rs/probe-rs/src/probe/cmsisdap/tools.rs:274
+(HOST) TRACE Error opening: Access
+└─ probe_rs::probe::cmsisdap::tools @ /home/bobo1239/Development/Rust/probe-rs/probe-rs/src/probe/cmsisdap/tools.rs:287
+(HOST) TRACE Trying device Bus 005 Device 003: ID 0bda:4852
+└─ probe_rs::probe::cmsisdap::tools @ /home/bobo1239/Development/Rust/probe-rs/probe-rs/src/probe/cmsisdap/tools.rs:274
+(HOST) TRACE Error opening: Access
+└─ probe_rs::probe::cmsisdap::tools @ /home/bobo1239/Development/Rust/probe-rs/probe-rs/src/probe/cmsisdap/tools.rs:287
+(HOST) TRACE Trying device Bus 005 Device 002: ID 06cb:00bd
+└─ probe_rs::probe::cmsisdap::tools @ /home/bobo1239/Development/Rust/probe-rs/probe-rs/src/probe/cmsisdap/tools.rs:274
+(HOST) TRACE Error opening: Access
+└─ probe_rs::probe::cmsisdap::tools @ /home/bobo1239/Development/Rust/probe-rs/probe-rs/src/probe/cmsisdap/tools.rs:287
+(HOST) TRACE Trying device Bus 005 Device 027: ID 0483:3748
+└─ probe_rs::probe::cmsisdap::tools @ /home/bobo1239/Development/Rust/probe-rs/probe-rs/src/probe/cmsisdap/tools.rs:274
+(HOST) TRACE Trying device Bus 005 Device 001: ID 1d6b:0002
+└─ probe_rs::probe::cmsisdap::tools @ /home/bobo1239/Development/Rust/probe-rs/probe-rs/src/probe/cmsisdap/tools.rs:274
+(HOST) TRACE Error opening: Access
+└─ probe_rs::probe::cmsisdap::tools @ /home/bobo1239/Development/Rust/probe-rs/probe-rs/src/probe/cmsisdap/tools.rs:287
+(HOST) TRACE Trying device Bus 004 Device 013: ID 05e3:0626
+└─ probe_rs::probe::cmsisdap::tools @ /home/bobo1239/Development/Rust/probe-rs/probe-rs/src/probe/cmsisdap/tools.rs:274
+(HOST) TRACE Error opening: Access
+└─ probe_rs::probe::cmsisdap::tools @ /home/bobo1239/Development/Rust/probe-rs/probe-rs/src/probe/cmsisdap/tools.rs:287
+(HOST) TRACE Trying device Bus 004 Device 012: ID 0b95:1790
+└─ probe_rs::probe::cmsisdap::tools @ /home/bobo1239/Development/Rust/probe-rs/probe-rs/src/probe/cmsisdap/tools.rs:274
+(HOST) TRACE Error opening: Access
+└─ probe_rs::probe::cmsisdap::tools @ /home/bobo1239/Development/Rust/probe-rs/probe-rs/src/probe/cmsisdap/tools.rs:287
+(HOST) TRACE Trying device Bus 004 Device 011: ID 2109:0817
+└─ probe_rs::probe::cmsisdap::tools @ /home/bobo1239/Development/Rust/probe-rs/probe-rs/src/probe/cmsisdap/tools.rs:274
+(HOST) TRACE Error opening: Access
+└─ probe_rs::probe::cmsisdap::tools @ /home/bobo1239/Development/Rust/probe-rs/probe-rs/src/probe/cmsisdap/tools.rs:287
+(HOST) TRACE Trying device Bus 004 Device 001: ID 1d6b:0003
+└─ probe_rs::probe::cmsisdap::tools @ /home/bobo1239/Development/Rust/probe-rs/probe-rs/src/probe/cmsisdap/tools.rs:274
+(HOST) TRACE Error opening: Access
+└─ probe_rs::probe::cmsisdap::tools @ /home/bobo1239/Development/Rust/probe-rs/probe-rs/src/probe/cmsisdap/tools.rs:287
+(HOST) TRACE Trying device Bus 003 Device 003: ID 058f:9540
+└─ probe_rs::probe::cmsisdap::tools @ /home/bobo1239/Development/Rust/probe-rs/probe-rs/src/probe/cmsisdap/tools.rs:274
+(HOST) TRACE Trying device Bus 003 Device 046: ID 2109:8888
+└─ probe_rs::probe::cmsisdap::tools @ /home/bobo1239/Development/Rust/probe-rs/probe-rs/src/probe/cmsisdap/tools.rs:274
+(HOST) TRACE Error opening: Access
+└─ probe_rs::probe::cmsisdap::tools @ /home/bobo1239/Development/Rust/probe-rs/probe-rs/src/probe/cmsisdap/tools.rs:287
+(HOST) TRACE Trying device Bus 003 Device 045: ID 08bb:2902
+└─ probe_rs::probe::cmsisdap::tools @ /home/bobo1239/Development/Rust/probe-rs/probe-rs/src/probe/cmsisdap/tools.rs:274
+(HOST) TRACE Error opening: Access
+└─ probe_rs::probe::cmsisdap::tools @ /home/bobo1239/Development/Rust/probe-rs/probe-rs/src/probe/cmsisdap/tools.rs:287
+(HOST) TRACE Trying device Bus 003 Device 044: ID 0951:16d2
+└─ probe_rs::probe::cmsisdap::tools @ /home/bobo1239/Development/Rust/probe-rs/probe-rs/src/probe/cmsisdap/tools.rs:274
+(HOST) TRACE Error opening: Access
+└─ probe_rs::probe::cmsisdap::tools @ /home/bobo1239/Development/Rust/probe-rs/probe-rs/src/probe/cmsisdap/tools.rs:287
+(HOST) TRACE Trying device Bus 003 Device 043: ID 1af3:0001
+└─ probe_rs::probe::cmsisdap::tools @ /home/bobo1239/Development/Rust/probe-rs/probe-rs/src/probe/cmsisdap/tools.rs:274
+(HOST) TRACE Error opening: Access
+└─ probe_rs::probe::cmsisdap::tools @ /home/bobo1239/Development/Rust/probe-rs/probe-rs/src/probe/cmsisdap/tools.rs:287
+(HOST) TRACE Trying device Bus 003 Device 042: ID 05e3:0610
+└─ probe_rs::probe::cmsisdap::tools @ /home/bobo1239/Development/Rust/probe-rs/probe-rs/src/probe/cmsisdap/tools.rs:274
+(HOST) TRACE Error opening: Access
+└─ probe_rs::probe::cmsisdap::tools @ /home/bobo1239/Development/Rust/probe-rs/probe-rs/src/probe/cmsisdap/tools.rs:287
+(HOST) TRACE Trying device Bus 003 Device 041: ID 2109:2817
+└─ probe_rs::probe::cmsisdap::tools @ /home/bobo1239/Development/Rust/probe-rs/probe-rs/src/probe/cmsisdap/tools.rs:274
+(HOST) TRACE Error opening: Access
+└─ probe_rs::probe::cmsisdap::tools @ /home/bobo1239/Development/Rust/probe-rs/probe-rs/src/probe/cmsisdap/tools.rs:287
+(HOST) TRACE Trying device Bus 003 Device 001: ID 1d6b:0002
+└─ probe_rs::probe::cmsisdap::tools @ /home/bobo1239/Development/Rust/probe-rs/probe-rs/src/probe/cmsisdap/tools.rs:274
+(HOST) TRACE Error opening: Access
+└─ probe_rs::probe::cmsisdap::tools @ /home/bobo1239/Development/Rust/probe-rs/probe-rs/src/probe/cmsisdap/tools.rs:287
+(HOST) TRACE Trying device Bus 002 Device 001: ID 1d6b:0003
+└─ probe_rs::probe::cmsisdap::tools @ /home/bobo1239/Development/Rust/probe-rs/probe-rs/src/probe/cmsisdap/tools.rs:274
+(HOST) TRACE Error opening: Access
+└─ probe_rs::probe::cmsisdap::tools @ /home/bobo1239/Development/Rust/probe-rs/probe-rs/src/probe/cmsisdap/tools.rs:287
+(HOST) TRACE Trying device Bus 001 Device 002: ID 04f2:b6d0
+└─ probe_rs::probe::cmsisdap::tools @ /home/bobo1239/Development/Rust/probe-rs/probe-rs/src/probe/cmsisdap/tools.rs:274
+(HOST) TRACE Error opening: Access
+└─ probe_rs::probe::cmsisdap::tools @ /home/bobo1239/Development/Rust/probe-rs/probe-rs/src/probe/cmsisdap/tools.rs:287
+(HOST) TRACE Trying device Bus 001 Device 001: ID 1d6b:0002
+└─ probe_rs::probe::cmsisdap::tools @ /home/bobo1239/Development/Rust/probe-rs/probe-rs/src/probe/cmsisdap/tools.rs:274
+(HOST) TRACE Error opening: Access
+└─ probe_rs::probe::cmsisdap::tools @ /home/bobo1239/Development/Rust/probe-rs/probe-rs/src/probe/cmsisdap/tools.rs:287
+(HOST) DEBUG Attempting to open 0483:3748 in CMSIS-DAP v1 mode
+└─ probe_rs::probe::cmsisdap::tools @ /home/bobo1239/Development/Rust/probe-rs/probe-rs/src/probe/cmsisdap/tools.rs:331
+(HOST) DEBUG Acquired libusb context.
+└─ probe_rs::probe::stlink::usb_interface @ /home/bobo1239/Development/Rust/probe-rs/probe-rs/src/probe/stlink/usb_interface.rs:109
+(HOST) DEBUG Aquired handle for probe
+└─ probe_rs::probe::stlink::usb_interface @ /home/bobo1239/Development/Rust/probe-rs/probe-rs/src/probe/stlink/usb_interface.rs:141
+(HOST) DEBUG Active config descriptor: ConfigDescriptor { bLength: 9, bDescriptorType: 2, wTotalLength: 39, bNumInterfaces: 1, bConfigurationValue: 1, iConfiguration: 0, bmAttributes: 128, bMaxPower: 50, extra: [] }
+└─ probe_rs::probe::stlink::usb_interface @ /home/bobo1239/Development/Rust/probe-rs/probe-rs/src/probe/stlink/usb_interface.rs:145
+(HOST) DEBUG Device descriptor: DeviceDescriptor { bLength: 18, bDescriptorType: 1, bcdUSB: 512, bDeviceClass: 0, bDeviceSubClass: 0, bDeviceProtocol: 0, bMaxPacketSize: 64, idVendor: 1155, idProduct: 14152, bcdDevice: 256, iManufacturer: 1, iProduct: 2, iSerialNumber: 3, bNumConfigurations: 1 }
+└─ probe_rs::probe::stlink::usb_interface @ /home/bobo1239/Development/Rust/probe-rs/probe-rs/src/probe/stlink/usb_interface.rs:149
+(HOST) DEBUG Claimed interface 0 of USB device.
+└─ probe_rs::probe::stlink::usb_interface @ /home/bobo1239/Development/Rust/probe-rs/probe-rs/src/probe/stlink/usb_interface.rs:155
+(HOST) DEBUG Succesfully attached to STLink.
+└─ probe_rs::probe::stlink::usb_interface @ /home/bobo1239/Development/Rust/probe-rs/probe-rs/src/probe/stlink/usb_interface.rs:192
+(HOST) DEBUG Initializing STLink...
+└─ probe_rs::probe::stlink @ /home/bobo1239/Development/Rust/probe-rs/probe-rs/src/probe/stlink/mod.rs:465
+(HOST) TRACE Getting current mode of device...
+└─ probe_rs::probe::stlink @ /home/bobo1239/Development/Rust/probe-rs/probe-rs/src/probe/stlink/mod.rs:364
+(HOST) TRACE Sending command [f5] to STLink, timeout: 1s
+└─ probe_rs::probe::stlink::usb_interface @ /home/bobo1239/Development/Rust/probe-rs/probe-rs/src/probe/stlink/usb_interface.rs:216
+(HOST) TRACE Read 2 bytes, 0 bytes remaining
+└─ probe_rs::probe::stlink::usb_interface @ /home/bobo1239/Development/Rust/probe-rs/probe-rs/src/probe/stlink/usb_interface.rs:282
+(HOST) DEBUG Current device mode: Dfu
+└─ probe_rs::probe::stlink @ /home/bobo1239/Development/Rust/probe-rs/probe-rs/src/probe/stlink/mod.rs:379
+(HOST) TRACE Sending command [f3, 7] to STLink, timeout: 1s
+└─ probe_rs::probe::stlink::usb_interface @ /home/bobo1239/Development/Rust/probe-rs/probe-rs/src/probe/stlink/usb_interface.rs:216
+(HOST) TRACE Sending command [f1] to STLink, timeout: 1s
+└─ probe_rs::probe::stlink::usb_interface @ /home/bobo1239/Development/Rust/probe-rs/probe-rs/src/probe/stlink/usb_interface.rs:216
+(HOST) TRACE Read 6 bytes, 0 bytes remaining
+└─ probe_rs::probe::stlink::usb_interface @ /home/bobo1239/Development/Rust/probe-rs/probe-rs/src/probe/stlink/usb_interface.rs:282
+(HOST) DEBUG STLink version: (2, 29)
+└─ probe_rs::probe::stlink @ /home/bobo1239/Development/Rust/probe-rs/probe-rs/src/probe/stlink/mod.rs:481
+(HOST) DEBUG opened probe
+└─ probe_run::probe @ src/probe.rs:33
+(HOST) DEBUG attach(Swd)
+└─ probe_rs::probe::stlink @ /home/bobo1239/Development/Rust/probe-rs/probe-rs/src/probe/stlink/mod.rs:143
+(HOST) TRACE Getting current mode of device...
+└─ probe_rs::probe::stlink @ /home/bobo1239/Development/Rust/probe-rs/probe-rs/src/probe/stlink/mod.rs:364
+(HOST) TRACE Sending command [f5] to STLink, timeout: 1s
+└─ probe_rs::probe::stlink::usb_interface @ /home/bobo1239/Development/Rust/probe-rs/probe-rs/src/probe/stlink/usb_interface.rs:216
+(HOST) TRACE Read 2 bytes, 0 bytes remaining
+└─ probe_rs::probe::stlink::usb_interface @ /home/bobo1239/Development/Rust/probe-rs/probe-rs/src/probe/stlink/usb_interface.rs:282
+(HOST) DEBUG Current device mode: MassStorage
+└─ probe_rs::probe::stlink @ /home/bobo1239/Development/Rust/probe-rs/probe-rs/src/probe/stlink/mod.rs:379
+(HOST) DEBUG Switching protocol to SWD
+└─ probe_rs::probe::stlink @ /home/bobo1239/Development/Rust/probe-rs/probe-rs/src/probe/stlink/mod.rs:152
+(HOST) TRACE Sending command [f7] to STLink, timeout: 1s
+└─ probe_rs::probe::stlink::usb_interface @ /home/bobo1239/Development/Rust/probe-rs/probe-rs/src/probe/stlink/usb_interface.rs:216
+(HOST) TRACE Read 8 bytes, 0 bytes remaining
+└─ probe_rs::probe::stlink::usb_interface @ /home/bobo1239/Development/Rust/probe-rs/probe-rs/src/probe/stlink/usb_interface.rs:282
+(HOST) INFO  Target voltage (VAPP): 3.13 V
+└─ probe_rs::probe::stlink @ /home/bobo1239/Development/Rust/probe-rs/probe-rs/src/probe/stlink/mod.rs:167
+(HOST) TRACE Sending command [f2, 30, a3, 0] to STLink, timeout: 1s
+└─ probe_rs::probe::stlink::usb_interface @ /home/bobo1239/Development/Rust/probe-rs/probe-rs/src/probe/stlink/usb_interface.rs:216
+(HOST) TRACE Read 2 bytes, 0 bytes remaining
+└─ probe_rs::probe::stlink::usb_interface @ /home/bobo1239/Development/Rust/probe-rs/probe-rs/src/probe/stlink/usb_interface.rs:282
+(HOST) DEBUG Successfully initialized SWD.
+└─ probe_rs::probe::stlink @ /home/bobo1239/Development/Rust/probe-rs/probe-rs/src/probe/stlink/mod.rs:178
+(HOST) TRACE Sending command [f2, 43, 1] to STLink, timeout: 1s
+└─ probe_rs::probe::stlink::usb_interface @ /home/bobo1239/Development/Rust/probe-rs/probe-rs/src/probe/stlink/usb_interface.rs:216
+(HOST) TRACE Read 2 bytes, 0 bytes remaining
+└─ probe_rs::probe::stlink::usb_interface @ /home/bobo1239/Development/Rust/probe-rs/probe-rs/src/probe/stlink/usb_interface.rs:282
+(HOST) DEBUG Reading register IDR
+└─ probe_rs::architecture::arm::ap @ /home/bobo1239/Development/Rust/probe-rs/probe-rs/src/architecture/arm/ap/mod.rs:157
+(HOST) DEBUG Opening AP 0
+└─ probe_rs::probe::stlink @ /home/bobo1239/Development/Rust/probe-rs/probe-rs/src/probe/stlink/mod.rs:606
+(HOST) TRACE JTAG_INIT_AP 0
+└─ probe_rs::probe::stlink @ /home/bobo1239/Development/Rust/probe-rs/probe-rs/src/probe/stlink/mod.rs:625
+(HOST) TRACE Sending command [f2, 4b, 0] to STLink, timeout: 1s
+└─ probe_rs::probe::stlink::usb_interface @ /home/bobo1239/Development/Rust/probe-rs/probe-rs/src/probe/stlink/usb_interface.rs:216
+(HOST) TRACE Read 2 bytes, 0 bytes remaining
+└─ probe_rs::probe::stlink::usb_interface @ /home/bobo1239/Development/Rust/probe-rs/probe-rs/src/probe/stlink/usb_interface.rs:282
+(HOST) WARN  send_jtag_command 242 got SwdDpWait, retrying
+└─ probe_rs::probe::stlink @ /home/bobo1239/Development/Rust/probe-rs/probe-rs/src/probe/stlink/mod.rs:667
+(HOST) TRACE Sending command [f2, 4b, 0] to STLink, timeout: 1s
+└─ probe_rs::probe::stlink::usb_interface @ /home/bobo1239/Development/Rust/probe-rs/probe-rs/src/probe/stlink/usb_interface.rs:216
+(HOST) TRACE Read 2 bytes, 0 bytes remaining
+└─ probe_rs::probe::stlink::usb_interface @ /home/bobo1239/Development/Rust/probe-rs/probe-rs/src/probe/stlink/usb_interface.rs:282
+(HOST) WARN  send_jtag_command 242 got SwdDpWait, retrying
+└─ probe_rs::probe::stlink @ /home/bobo1239/Development/Rust/probe-rs/probe-rs/src/probe/stlink/mod.rs:667
+(HOST) TRACE Sending command [f2, 4b, 0] to STLink, timeout: 1s
+└─ probe_rs::probe::stlink::usb_interface @ /home/bobo1239/Development/Rust/probe-rs/probe-rs/src/probe/stlink/usb_interface.rs:216
+(HOST) TRACE Read 2 bytes, 0 bytes remaining
+└─ probe_rs::probe::stlink::usb_interface @ /home/bobo1239/Development/Rust/probe-rs/probe-rs/src/probe/stlink/usb_interface.rs:282
+(HOST) WARN  send_jtag_command 242 got SwdDpWait, retrying
+└─ probe_rs::probe::stlink @ /home/bobo1239/Development/Rust/probe-rs/probe-rs/src/probe/stlink/mod.rs:667
+(HOST) TRACE Sending command [f2, 4b, 0] to STLink, timeout: 1s
+└─ probe_rs::probe::stlink::usb_interface @ /home/bobo1239/Development/Rust/probe-rs/probe-rs/src/probe/stlink/usb_interface.rs:216
+(HOST) TRACE Read 2 bytes, 0 bytes remaining
+└─ probe_rs::probe::stlink::usb_interface @ /home/bobo1239/Development/Rust/probe-rs/probe-rs/src/probe/stlink/usb_interface.rs:282
+(HOST) WARN  send_jtag_command 242 got SwdDpWait, retrying
+└─ probe_rs::probe::stlink @ /home/bobo1239/Development/Rust/probe-rs/probe-rs/src/probe/stlink/mod.rs:667
+(HOST) TRACE Sending command [f2, 4b, 0] to STLink, timeout: 1s
+└─ probe_rs::probe::stlink::usb_interface @ /home/bobo1239/Development/Rust/probe-rs/probe-rs/src/probe/stlink/usb_interface.rs:216
+(HOST) TRACE Read 2 bytes, 0 bytes remaining
+└─ probe_rs::probe::stlink::usb_interface @ /home/bobo1239/Development/Rust/probe-rs/probe-rs/src/probe/stlink/usb_interface.rs:282
+(HOST) WARN  send_jtag_command 242 got SwdDpWait, retrying
+└─ probe_rs::probe::stlink @ /home/bobo1239/Development/Rust/probe-rs/probe-rs/src/probe/stlink/mod.rs:667
+(HOST) TRACE Sending command [f2, 4b, 0] to STLink, timeout: 1s
+└─ probe_rs::probe::stlink::usb_interface @ /home/bobo1239/Development/Rust/probe-rs/probe-rs/src/probe/stlink/usb_interface.rs:216
+(HOST) TRACE Read 2 bytes, 0 bytes remaining
+└─ probe_rs::probe::stlink::usb_interface @ /home/bobo1239/Development/Rust/probe-rs/probe-rs/src/probe/stlink/usb_interface.rs:282
+(HOST) WARN  send_jtag_command 242 got SwdDpWait, retrying
+└─ probe_rs::probe::stlink @ /home/bobo1239/Development/Rust/probe-rs/probe-rs/src/probe/stlink/mod.rs:667
+(HOST) TRACE Sending command [f2, 4b, 0] to STLink, timeout: 1s
+└─ probe_rs::probe::stlink::usb_interface @ /home/bobo1239/Development/Rust/probe-rs/probe-rs/src/probe/stlink/usb_interface.rs:216
+(HOST) TRACE Read 2 bytes, 0 bytes remaining
+└─ probe_rs::probe::stlink::usb_interface @ /home/bobo1239/Development/Rust/probe-rs/probe-rs/src/probe/stlink/usb_interface.rs:282
+(HOST) WARN  send_jtag_command 242 got SwdDpWait, retrying
+└─ probe_rs::probe::stlink @ /home/bobo1239/Development/Rust/probe-rs/probe-rs/src/probe/stlink/mod.rs:667
+(HOST) TRACE Sending command [f2, 4b, 0] to STLink, timeout: 1s
+└─ probe_rs::probe::stlink::usb_interface @ /home/bobo1239/Development/Rust/probe-rs/probe-rs/src/probe/stlink/usb_interface.rs:216
+(HOST) TRACE Read 2 bytes, 0 bytes remaining
+└─ probe_rs::probe::stlink::usb_interface @ /home/bobo1239/Development/Rust/probe-rs/probe-rs/src/probe/stlink/usb_interface.rs:282
+(HOST) WARN  send_jtag_command 242 got SwdDpWait, retrying
+└─ probe_rs::probe::stlink @ /home/bobo1239/Development/Rust/probe-rs/probe-rs/src/probe/stlink/mod.rs:667
+(HOST) TRACE Sending command [f2, 4b, 0] to STLink, timeout: 1s
+└─ probe_rs::probe::stlink::usb_interface @ /home/bobo1239/Development/Rust/probe-rs/probe-rs/src/probe/stlink/usb_interface.rs:216
+(HOST) TRACE Read 2 bytes, 0 bytes remaining
+└─ probe_rs::probe::stlink::usb_interface @ /home/bobo1239/Development/Rust/probe-rs/probe-rs/src/probe/stlink/usb_interface.rs:282
+(HOST) WARN  send_jtag_command 242 got SwdDpWait, retrying
+└─ probe_rs::probe::stlink @ /home/bobo1239/Development/Rust/probe-rs/probe-rs/src/probe/stlink/mod.rs:667
+(HOST) TRACE Sending command [f2, 4b, 0] to STLink, timeout: 1s
+└─ probe_rs::probe::stlink::usb_interface @ /home/bobo1239/Development/Rust/probe-rs/probe-rs/src/probe/stlink/usb_interface.rs:216
+(HOST) TRACE Read 2 bytes, 0 bytes remaining
+└─ probe_rs::probe::stlink::usb_interface @ /home/bobo1239/Development/Rust/probe-rs/probe-rs/src/probe/stlink/usb_interface.rs:282
+(HOST) WARN  send_jtag_command 242 got SwdDpWait, retrying
+└─ probe_rs::probe::stlink @ /home/bobo1239/Development/Rust/probe-rs/probe-rs/src/probe/stlink/mod.rs:667
+(HOST) TRACE Sending command [f2, 4b, 0] to STLink, timeout: 1s
+└─ probe_rs::probe::stlink::usb_interface @ /home/bobo1239/Development/Rust/probe-rs/probe-rs/src/probe/stlink/usb_interface.rs:216
+(HOST) TRACE Read 2 bytes, 0 bytes remaining
+└─ probe_rs::probe::stlink::usb_interface @ /home/bobo1239/Development/Rust/probe-rs/probe-rs/src/probe/stlink/usb_interface.rs:282
+(HOST) WARN  send_jtag_command 242 got SwdDpWait, retrying
+└─ probe_rs::probe::stlink @ /home/bobo1239/Development/Rust/probe-rs/probe-rs/src/probe/stlink/mod.rs:667
+(HOST) TRACE Sending command [f2, 4b, 0] to STLink, timeout: 1s
+└─ probe_rs::probe::stlink::usb_interface @ /home/bobo1239/Development/Rust/probe-rs/probe-rs/src/probe/stlink/usb_interface.rs:216
+(HOST) TRACE Read 2 bytes, 0 bytes remaining
+└─ probe_rs::probe::stlink::usb_interface @ /home/bobo1239/Development/Rust/probe-rs/probe-rs/src/probe/stlink/usb_interface.rs:282
+(HOST) WARN  send_jtag_command 242 got SwdDpWait, retrying
+└─ probe_rs::probe::stlink @ /home/bobo1239/Development/Rust/probe-rs/probe-rs/src/probe/stlink/mod.rs:667
+(HOST) TRACE Sending command [f2, 4b, 0] to STLink, timeout: 1s
+└─ probe_rs::probe::stlink::usb_interface @ /home/bobo1239/Development/Rust/probe-rs/probe-rs/src/probe/stlink/usb_interface.rs:216
+(HOST) TRACE Read 2 bytes, 0 bytes remaining
+└─ probe_rs::probe::stlink::usb_interface @ /home/bobo1239/Development/Rust/probe-rs/probe-rs/src/probe/stlink/usb_interface.rs:282
+(HOST) WARN  send_jtag_command 242 got SwdDpWait, retrying
+└─ probe_rs::probe::stlink @ /home/bobo1239/Development/Rust/probe-rs/probe-rs/src/probe/stlink/mod.rs:667
+(HOST) WARN  too many retries, giving up
+└─ probe_rs::probe::stlink @ /home/bobo1239/Development/Rust/probe-rs/probe-rs/src/probe/stlink/mod.rs:682
+(HOST) DEBUG debug_device_unlock;
+└─ probe_rs::session @ /home/bobo1239/Development/Rust/probe-rs/probe-rs/src/session.rs:182
+(HOST) TRACE -> debug_device_unlock;
+└─ probe_rs::session @ /home/bobo1239/Development/Rust/probe-rs/probe-rs/src/session.rs:182
+(HOST) DEBUG Opening AP 0
+└─ probe_rs::probe::stlink @ /home/bobo1239/Development/Rust/probe-rs/probe-rs/src/probe/stlink/mod.rs:606
+(HOST) TRACE JTAG_INIT_AP 0
+└─ probe_rs::probe::stlink @ /home/bobo1239/Development/Rust/probe-rs/probe-rs/src/probe/stlink/mod.rs:625
+(HOST) TRACE Sending command [f2, 4b, 0] to STLink, timeout: 1s
+└─ probe_rs::probe::stlink::usb_interface @ /home/bobo1239/Development/Rust/probe-rs/probe-rs/src/probe/stlink/usb_interface.rs:216
+(HOST) TRACE Read 2 bytes, 0 bytes remaining
+└─ probe_rs::probe::stlink::usb_interface @ /home/bobo1239/Development/Rust/probe-rs/probe-rs/src/probe/stlink/usb_interface.rs:282
+(HOST) WARN  send_jtag_command 242 got SwdDpWait, retrying
+└─ probe_rs::probe::stlink @ /home/bobo1239/Development/Rust/probe-rs/probe-rs/src/probe/stlink/mod.rs:667
+(HOST) TRACE Sending command [f2, 4b, 0] to STLink, timeout: 1s
+└─ probe_rs::probe::stlink::usb_interface @ /home/bobo1239/Development/Rust/probe-rs/probe-rs/src/probe/stlink/usb_interface.rs:216
+(HOST) TRACE Read 2 bytes, 0 bytes remaining
+└─ probe_rs::probe::stlink::usb_interface @ /home/bobo1239/Development/Rust/probe-rs/probe-rs/src/probe/stlink/usb_interface.rs:282
+(HOST) WARN  send_jtag_command 242 got SwdDpWait, retrying
+└─ probe_rs::probe::stlink @ /home/bobo1239/Development/Rust/probe-rs/probe-rs/src/probe/stlink/mod.rs:667
+(HOST) TRACE Sending command [f2, 4b, 0] to STLink, timeout: 1s
+└─ probe_rs::probe::stlink::usb_interface @ /home/bobo1239/Development/Rust/probe-rs/probe-rs/src/probe/stlink/usb_interface.rs:216
+(HOST) TRACE Read 2 bytes, 0 bytes remaining
+└─ probe_rs::probe::stlink::usb_interface @ /home/bobo1239/Development/Rust/probe-rs/probe-rs/src/probe/stlink/usb_interface.rs:282
+(HOST) WARN  send_jtag_command 242 got SwdDpWait, retrying
+└─ probe_rs::probe::stlink @ /home/bobo1239/Development/Rust/probe-rs/probe-rs/src/probe/stlink/mod.rs:667
+(HOST) TRACE Sending command [f2, 4b, 0] to STLink, timeout: 1s
+└─ probe_rs::probe::stlink::usb_interface @ /home/bobo1239/Development/Rust/probe-rs/probe-rs/src/probe/stlink/usb_interface.rs:216
+(HOST) TRACE Read 2 bytes, 0 bytes remaining
+└─ probe_rs::probe::stlink::usb_interface @ /home/bobo1239/Development/Rust/probe-rs/probe-rs/src/probe/stlink/usb_interface.rs:282
+(HOST) WARN  send_jtag_command 242 got SwdDpWait, retrying
+└─ probe_rs::probe::stlink @ /home/bobo1239/Development/Rust/probe-rs/probe-rs/src/probe/stlink/mod.rs:667
+(HOST) TRACE Sending command [f2, 4b, 0] to STLink, timeout: 1s
+└─ probe_rs::probe::stlink::usb_interface @ /home/bobo1239/Development/Rust/probe-rs/probe-rs/src/probe/stlink/usb_interface.rs:216
+(HOST) TRACE Read 2 bytes, 0 bytes remaining
+└─ probe_rs::probe::stlink::usb_interface @ /home/bobo1239/Development/Rust/probe-rs/probe-rs/src/probe/stlink/usb_interface.rs:282
+(HOST) WARN  send_jtag_command 242 got SwdDpWait, retrying
+└─ probe_rs::probe::stlink @ /home/bobo1239/Development/Rust/probe-rs/probe-rs/src/probe/stlink/mod.rs:667
+(HOST) TRACE Sending command [f2, 4b, 0] to STLink, timeout: 1s
+└─ probe_rs::probe::stlink::usb_interface @ /home/bobo1239/Development/Rust/probe-rs/probe-rs/src/probe/stlink/usb_interface.rs:216
+(HOST) TRACE Read 2 bytes, 0 bytes remaining
+└─ probe_rs::probe::stlink::usb_interface @ /home/bobo1239/Development/Rust/probe-rs/probe-rs/src/probe/stlink/usb_interface.rs:282
+(HOST) WARN  send_jtag_command 242 got SwdDpWait, retrying
+└─ probe_rs::probe::stlink @ /home/bobo1239/Development/Rust/probe-rs/probe-rs/src/probe/stlink/mod.rs:667
+(HOST) TRACE Sending command [f2, 4b, 0] to STLink, timeout: 1s
+└─ probe_rs::probe::stlink::usb_interface @ /home/bobo1239/Development/Rust/probe-rs/probe-rs/src/probe/stlink/usb_interface.rs:216
+(HOST) TRACE Read 2 bytes, 0 bytes remaining
+└─ probe_rs::probe::stlink::usb_interface @ /home/bobo1239/Development/Rust/probe-rs/probe-rs/src/probe/stlink/usb_interface.rs:282
+(HOST) WARN  send_jtag_command 242 got SwdDpWait, retrying
+└─ probe_rs::probe::stlink @ /home/bobo1239/Development/Rust/probe-rs/probe-rs/src/probe/stlink/mod.rs:667
+(HOST) TRACE Sending command [f2, 4b, 0] to STLink, timeout: 1s
+└─ probe_rs::probe::stlink::usb_interface @ /home/bobo1239/Development/Rust/probe-rs/probe-rs/src/probe/stlink/usb_interface.rs:216
+(HOST) TRACE Read 2 bytes, 0 bytes remaining
+└─ probe_rs::probe::stlink::usb_interface @ /home/bobo1239/Development/Rust/probe-rs/probe-rs/src/probe/stlink/usb_interface.rs:282
+(HOST) WARN  send_jtag_command 242 got SwdDpWait, retrying
+└─ probe_rs::probe::stlink @ /home/bobo1239/Development/Rust/probe-rs/probe-rs/src/probe/stlink/mod.rs:667
+(HOST) TRACE Sending command [f2, 4b, 0] to STLink, timeout: 1s
+└─ probe_rs::probe::stlink::usb_interface @ /home/bobo1239/Development/Rust/probe-rs/probe-rs/src/probe/stlink/usb_interface.rs:216
+(HOST) TRACE Read 2 bytes, 0 bytes remaining
+└─ probe_rs::probe::stlink::usb_interface @ /home/bobo1239/Development/Rust/probe-rs/probe-rs/src/probe/stlink/usb_interface.rs:282
+(HOST) WARN  send_jtag_command 242 got SwdDpWait, retrying
+└─ probe_rs::probe::stlink @ /home/bobo1239/Development/Rust/probe-rs/probe-rs/src/probe/stlink/mod.rs:667
+(HOST) TRACE Sending command [f2, 4b, 0] to STLink, timeout: 1s
+└─ probe_rs::probe::stlink::usb_interface @ /home/bobo1239/Development/Rust/probe-rs/probe-rs/src/probe/stlink/usb_interface.rs:216
+(HOST) TRACE Read 2 bytes, 0 bytes remaining
+└─ probe_rs::probe::stlink::usb_interface @ /home/bobo1239/Development/Rust/probe-rs/probe-rs/src/probe/stlink/usb_interface.rs:282
+(HOST) WARN  send_jtag_command 242 got SwdDpWait, retrying
+└─ probe_rs::probe::stlink @ /home/bobo1239/Development/Rust/probe-rs/probe-rs/src/probe/stlink/mod.rs:667
+(HOST) TRACE Sending command [f2, 4b, 0] to STLink, timeout: 1s
+└─ probe_rs::probe::stlink::usb_interface @ /home/bobo1239/Development/Rust/probe-rs/probe-rs/src/probe/stlink/usb_interface.rs:216
+(HOST) TRACE Read 2 bytes, 0 bytes remaining
+└─ probe_rs::probe::stlink::usb_interface @ /home/bobo1239/Development/Rust/probe-rs/probe-rs/src/probe/stlink/usb_interface.rs:282
+(HOST) WARN  send_jtag_command 242 got SwdDpWait, retrying
+└─ probe_rs::probe::stlink @ /home/bobo1239/Development/Rust/probe-rs/probe-rs/src/probe/stlink/mod.rs:667
+(HOST) TRACE Sending command [f2, 4b, 0] to STLink, timeout: 1s
+└─ probe_rs::probe::stlink::usb_interface @ /home/bobo1239/Development/Rust/probe-rs/probe-rs/src/probe/stlink/usb_interface.rs:216
+(HOST) TRACE Read 2 bytes, 0 bytes remaining
+└─ probe_rs::probe::stlink::usb_interface @ /home/bobo1239/Development/Rust/probe-rs/probe-rs/src/probe/stlink/usb_interface.rs:282
+(HOST) WARN  send_jtag_command 242 got SwdDpWait, retrying
+└─ probe_rs::probe::stlink @ /home/bobo1239/Development/Rust/probe-rs/probe-rs/src/probe/stlink/mod.rs:667
+(HOST) TRACE Sending command [f2, 4b, 0] to STLink, timeout: 1s
+└─ probe_rs::probe::stlink::usb_interface @ /home/bobo1239/Development/Rust/probe-rs/probe-rs/src/probe/stlink/usb_interface.rs:216
+(HOST) TRACE Read 2 bytes, 0 bytes remaining
+└─ probe_rs::probe::stlink::usb_interface @ /home/bobo1239/Development/Rust/probe-rs/probe-rs/src/probe/stlink/usb_interface.rs:282
+(HOST) WARN  send_jtag_command 242 got SwdDpWait, retrying
+└─ probe_rs::probe::stlink @ /home/bobo1239/Development/Rust/probe-rs/probe-rs/src/probe/stlink/mod.rs:667
+(HOST) WARN  too many retries, giving up
+└─ probe_rs::probe::stlink @ /home/bobo1239/Development/Rust/probe-rs/probe-rs/src/probe/stlink/mod.rs:682
+(HOST) TRACE <- debug_device_unlock;
+└─ probe_rs::session @ /home/bobo1239/Development/Rust/probe-rs/probe-rs/src/session.rs:182
+(HOST) TRACE -- debug_device_unlock;
+└─ probe_rs::session @ /home/bobo1239/Development/Rust/probe-rs/probe-rs/src/session.rs:182
+(HOST) TRACE Getting current mode of device...
+└─ probe_rs::probe::stlink @ /home/bobo1239/Development/Rust/probe-rs/probe-rs/src/probe/stlink/mod.rs:364
+(HOST) TRACE Sending command [f5] to STLink, timeout: 1s
+└─ probe_rs::probe::stlink::usb_interface @ /home/bobo1239/Development/Rust/probe-rs/probe-rs/src/probe/stlink/usb_interface.rs:216
+(HOST) TRACE Read 2 bytes, 0 bytes remaining
+└─ probe_rs::probe::stlink::usb_interface @ /home/bobo1239/Development/Rust/probe-rs/probe-rs/src/probe/stlink/usb_interface.rs:282
+(HOST) DEBUG Current device mode: Jtag
+└─ probe_rs::probe::stlink @ /home/bobo1239/Development/Rust/probe-rs/probe-rs/src/probe/stlink/mod.rs:379
+Error: An error with the usage of the probe occurred
+
+Caused by:
+    0: An error specific to a probe type occurred
+    1: Command failed with status SwdDpWait

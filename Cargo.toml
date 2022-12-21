@@ -1,0 +1,21 @@
+[package]
+name = "stm32f1_wfi_repro"
+version = "0.1.0"
+edition = "2021"
+
+[profile.dev]
+incremental = false
+codegen-units = 1
+
+[profile.release]
+codegen-units = 1
+debug = true
+lto = true
+
+[dependencies]
+embedded-hal = "0.2.7"
+nb = "1.0.0"
+cortex-m = "0.7.6"
+cortex-m-rt = "0.7.2"
+panic-halt = "0.2.0"
+stm32f1xx-hal = { version = "0.10.0", features = ["rt", "stm32f103", "medium"] }
